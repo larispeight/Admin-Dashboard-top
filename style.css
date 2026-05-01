@@ -164,5 +164,101 @@ li a.grid span{
     padding-right:1em;
 }
 /* Header */
+div.top-header{
+    grid-template-columns: 1fr auto;
+    gap:1vw;
+    color:#504c41;
+}
 
+form.search{
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap:1vw;
+}
+.search-icon{
+    width: 4vw;
+    display: grid;
+}
+input#search-input{
+    background-color: #f7d327;
+    border-radius: 1em;
+    max-width: 45vw;
+    border:none;
+    padding-top:0.3vh;
+    padding-bottom:0.3vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    outline: none;
+    color:#504c41;
+}
+
+div.profile{
+    grid-template-columns: auto auto 1fr;
+    gap: 1vw;
+    align-items: center;
+}
+a.notification{
+    width: 4vw;
+    display: grid;
+}
+.profile-image{
+    width: 4vw;
+    background-image: url(./assets/pictures/aaron-burden-2xhOYKK-jAM-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.profile span{
+    font-weight: bold;
+    font-size: clamp(0.8em, 1vw, 1.5em);
+}
+
+
+div.bottom-header{
+    grid-template-columns: 1fr auto;
+    gap:1vw;
+}
+
+div.hello{
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:1vw;
+    align-items: center;
+}
+.hello > div{
+    grid-area: 1 / 1 / 3 / 1;
+    background-image: url(./assets/pictures/aaron-burden-2xhOYKK-jAM-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 10vw;
+}
+.hello >span{
+    font-size: clamp(0.5em, 2.5vw,1em);
+    align-self: flex-end;
+}
+.hello >h2{
+    margin:0;
+    font-size: clamp(1em, 2.5vw, 1.5em);
+    align-self: flex-start;
+}
+
+.actions{
+    grid-template-columns: auto auto auto;
+    gap:1em;
+    justify-items: center;
+    align-items: center;
+}
+.actions > a{
+    background-color: #f7d327;
+    border:none;
+    text-align: center;
+    padding: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-radius: 2em;
+    text-decoration: none;
+    color: #504c41;
+    font-size: small;
+}
 /* Main */
