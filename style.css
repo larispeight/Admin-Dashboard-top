@@ -3,6 +3,14 @@
     display:grid;
     border: 1px solid grey;
 }
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+svg{
+    fill:#d0a823;
+}
 
 /* General First Layer */
 body{
@@ -16,6 +24,7 @@ body{
 }
 #aside{
     grid-area: aside;
+    background-color: #feed9f;
 }
 #header{
     grid-area:  header;
