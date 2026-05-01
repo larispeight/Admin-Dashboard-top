@@ -89,7 +89,81 @@ aside > nav{
 /* Settings by Sections */
 
 /* Aside */
+.branding.grid{
+    grid-template-columns: 4vw auto;
+    gap: 1vw;
+    align-items: center;
+    color:#504c41;
+}
+.branding.grid > svg{
+    width: clamp(2.2vw,4vw,4vw);
+    justify-self: center;
+}
+.branding.grid > h1{
+    font-size: clamp(1em, 2vw, 2em);
+}
 
+ul.grid{
+    gap:1vh;
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-areas: 
+    "."
+    "home"
+    "profile"
+    "messages"
+    "history"
+    "tasks"
+    "communities"
+    "."
+    "settings"
+    "support"
+    "privacy";
+}
+#home{
+    grid-area: home;
+}
+#profile{
+    grid-area: profile;
+}
+#messages{
+    grid-area: messages;
+}
+#history{
+    grid-area: history;
+}
+#tasks{
+    grid-area: tasks;
+}
+#communities{
+    grid-area: communities;
+}
+#settings{
+    grid-area: settings;
+}
+#support{
+    grid-area: support;
+}
+#privacy{
+    grid-area: privacy;
+}
+li a.grid{
+    grid-template-columns: 4vw auto;
+    gap:1vw;
+    align-items: center;
+    text-decoration: none;
+    color:#504c41;
+    font-size: clamp(1em, 1.5vw, 1.5em);
+    font-weight: bold;
+}
+
+li a.grid > svg{
+    width: clamp(2vw, 3vw ,3vw);
+    justify-self: center;
+}
+
+li a.grid span{
+    padding-right:1em;
+}
 /* Header */
 
 /* Main */
