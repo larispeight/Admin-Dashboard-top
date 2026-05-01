@@ -12,6 +12,7 @@ body{
     grid-template-areas: 
     "aside header"
     "aside main";
+    font-family: "pt sans caption", sans-serif;
 }
 #aside{
     grid-area: aside;
