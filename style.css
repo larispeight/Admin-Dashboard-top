@@ -11,7 +11,10 @@ ul{
 svg{
     fill:#d0a823;
 }
-
+.image-round{
+    border-radius: 6em;
+    aspect-ratio: 1 / 1;
+}
 /* General First Layer */
 body{
     grid-template-columns: auto 1fr;
